@@ -30,9 +30,8 @@ type ExpectedPowerShelf struct {
 	// Serial number of the Expected Power Shelf
 	ShelfSerialNumber *string `json:"shelfSerialNumber,omitempty"`
 	// IP address of the Expected Power Shelf
-	IpAddress NullableString `json:"ipAddress,omitempty"`
-	// User-defined key-value pairs for organizing and categorizing Expected Power Shelves
-	Labels map[string]string `json:"labels,omitempty"`
+	IpAddress NullableString    `json:"ipAddress,omitempty"`
+	Labels    map[string]string `json:"labels,omitempty"`
 	// ISO 8601 datetime when the Expected Power Shelf was created
 	Created *time.Time `json:"created,omitempty"`
 	// ISO 8601 datetime when the Expected Power Shelf was last updated

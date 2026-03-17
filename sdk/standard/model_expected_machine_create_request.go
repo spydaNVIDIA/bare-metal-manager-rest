@@ -35,8 +35,7 @@ type ExpectedMachineCreateRequest struct {
 	// Serial numbers of the Expected Machine's fallback DPUs (Data Processing Units)
 	FallbackDPUSerialNumbers []string `json:"fallbackDPUSerialNumbers,omitempty"`
 	// Optional ID of the SKU to associate with this Expected Machine
-	SkuId NullableString `json:"skuId,omitempty"`
-	// User-defined key-value pairs for organizing and categorizing Expected Machines
+	SkuId  NullableString    `json:"skuId,omitempty"`
 	Labels map[string]string `json:"labels,omitempty"`
 }
 
